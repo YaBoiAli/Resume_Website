@@ -2,10 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/public/css/main.css" />
-    <title>Ali Resume</title>
+    <link rel="icon" href="/public/img/Mangekyou_Sharingan_Itachi.svg.png" />
+    <title>Anteiku</title>
   </head>
   <body data-barba="wrapper">
     <div class="load-container">
@@ -19,37 +19,37 @@
         <div class="title animate-this" class="content">
           <h2 class="title animate-this">Welcome to my</h2>
           <h1>Creative Studio</h1>
-          <div class="animate-this button">
-            <a href="/about">Start</a>
+          <div
+            title="Double click to get to about page"
+            class="animate-this button"
+          >
+            <a href="/interest">Explore</a>
           </div>
         </div>
         <div class="bird">
-          <img src="/public/img/bird.gif" />
+          <img src="/public/img/bird.gif" alt="birds" />
         </div>
 
-        <div id="player">
-          <p id="value">
-            Current volume:
-            <span id="volumeValue" class="current-value">0%</span>
+        <div title="Rotate to play" id="player">
+          <p title="Rotate to play" id="value">
+            <span title="Rotate to play" id="volumeValue" class="current-value"
+              >0%</span
+            >
           </p>
-          <div class="knob-surround">
-            <div id="knob" class="knob"></div>
+          <div title="Rotate to play" class="knob-surround">
+            <div title="Rotate to play" id="knob" class="knob"></div>
 
-            <span class="min">Min</span>
-            <span class="max">Max</span>
+            <span title="Rotate to play" class="min">Min</span>
+            <span title="Rotate to play" class="max">Max</span>
 
             <div id="tickContainer" class="ticks"></div>
           </div>
-          <audio id="background_audio" controls volume="0.5" autoplay loop hidden>
-            <source  src="/public/audio/Parasyte.mp3" type="audio/mpeg" />
-            If you're reading this, audio isn't supported.
-          </audio>
         </div>
       </div>
     </main>
   </body>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script src="https://unpkg.com/@barba/core"></script>
+  <script src="https://unpkg.com/@barba/core@2.9.7/dist/barba.umd.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
   <script src="/public/js/main.js"></script>
 </html>
